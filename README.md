@@ -1,6 +1,6 @@
 Types by Display
 ============
-### A collection of scripts and apps for  ###
+### Collection of scripts and code used for our [Types exhibition](https://www.facebook.com/events/939127946101339/?fref=ts) ###
 
 
 Typography, and its many types, is instrumental in communicating things of all types. In the visual world that makes up much of our information age, types of letters, types of words, types of language, types of meanings, types of stories, and so on, all gain significance by way of typography.
