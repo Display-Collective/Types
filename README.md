@@ -3,18 +3,45 @@ Types by Display
 ### Collection of scripts and code used for our [Types exhibition](https://www.facebook.com/events/939127946101339/?fref=ts) ###
 
 
+About
+-------------
+
 Typography, and its many types, is instrumental in communicating things of all types. In the visual world that makes up much of our information age, types of letters, types of words, types of language, types of meanings, types of stories, and so on, all gain significance by way of typography.
 
 Types, a site-specific exhibition designed by Display, a revolving design collective and artistic rubric led by Katherine Walker with Ken Frederick, presents an exploration of typography as it embodies multiple methods of literary and visual communication, including print design, signage, environmental graphics, and more. Using writer Claire Keys’ fictional vignettes featuring untranslat- able foreign words as inspirational content, Display has transformed the gallery space into a physically all-encompassing installation to demonstrate typography’s incredible ability to simultaneously encompass the linguistic, literary and visual arts.
 
 Types by Display is curated by Jamilee Polson Lacy.
 
+[TYPES by Display](http://events.colum.edu/event/types_by_display)
+
+[Five Great Things to Do in Chicago This Week](http://www.chicagomag.com/arts-culture/November-2014/Five-Great-Things-to-Do-in-Chicago-This-Week/)
+
+['TYPES By Display' Typography Exhibition Coming to Columbia College Gallery](http://www.dnainfo.com/chicago/20141111/south-loop/types-by-display-typography-exhibition-coming-columbia-college-gallery)
+
+
+
+Dependencies
+-------------
+Without the great work from others, this work wouldn't have been possible here's the list of libraries and frameworks we used to make the above possible.
+
+##### Extendscript #####
+[Basil.js](http://basiljs.ch/)
+
+##### Javascript #####
+[Paper.js](http://paperjs.org/)
+[Folio.js](http://kennethfrederick.de/foliojs/)
+
+##### Processing #####
+[Processing](http://processing.org/)
+[ControlP5](http://www.sojamo.de/libraries/controlP5/)
+[FLib]()
+
 
 
 Extendscript
 -------------
 
-This is a directory of .jsx (Extendscript) scripts for use with Adobe Illustrator. These were created specifically for Types.
+This is a directory of .jsx (Extendscript) scripts. These were created specifically for Types.
 
 ##### display_types_facadePattern.jsx #####
 Script used to generate the halftone pattern for the façade of the A+D Gallery.
@@ -26,6 +53,18 @@ Script used for placing of the text for Komorebi on the poster.
 Script used to normalizing dot sizes for the Komorebi wall.
 
 ##### display_types_snap18-36-illus.jsx #####
+Utility script for snapping elements to the grid. (Illustrator)
+
+
+The following examples were powered using [Basil.js](http://basiljs.ch/), a port of [Processing](http://processing.org/) for use within Adobe Indesig
+
+##### display_types_KomorebiEase #####
+Script used for placing of the text for Komorebi on the poster.
+
+##### display_types_lappel_flip #####
+Unused concept, but this script would flip the reading order of text from bottom to top.
+
+##### display_types_snap18-36.jsx #####
 Utility script for snapping elements to the grid.
 
 
@@ -54,6 +93,8 @@ Sketch that generates and reads ASE palettes
 
 ##### display_types_M_ngata #####
 Sketch for the Mångata projection. This version reads from a server and allows updating from both the server side and within the app. Credit given where credit is due.
+
+
 
 
 License

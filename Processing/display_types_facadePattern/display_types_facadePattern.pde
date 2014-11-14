@@ -1,3 +1,15 @@
+/*
+ * Komorebi
+ *
+ * Ken Frederick
+ * ken.frederick@gmx.de
+ *
+ * http://kennethfrederick.de/
+ * http://blog.kennethfrederick.de/
+ *
+ */
+
+
 // ------------------------------------------------------------------------
 // Library
 // ------------------------------------------------------------------------
@@ -39,7 +51,7 @@ void draw() {
 
   fill(0);
   noStroke();
-  
+
   shape( halftone.draw(), 1000, 100 );
 
 //  endRecord();

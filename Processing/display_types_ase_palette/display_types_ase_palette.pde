@@ -1,3 +1,15 @@
+/*
+ * Pattern
+ *
+ * Ken Frederick
+ * ken.frederick@gmx.de
+ *
+ * http://kennethfrederick.de/
+ * http://blog.kennethfrederick.de/
+ *
+ */
+
+
 // ------------------------------------------------------------------------
 // Library
 // ------------------------------------------------------------------------
@@ -78,7 +90,7 @@ void draw() {
 //    int rgb = palette.getColor(i);
     int rgb = col[i];
 
-    int a = (rgb >> 24) & 0xFF;    
+    int a = (rgb >> 24) & 0xFF;
     int r = (rgb >> 16) & 0xFF;
     int g = (rgb >> 8) & 0xFF;
     int b = rgb & 0xFF;
@@ -87,7 +99,7 @@ void draw() {
     rect(w*i,y, w,height);
   }
 
-  
+
 }
 
 
