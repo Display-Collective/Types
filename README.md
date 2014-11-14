@@ -3,6 +3,10 @@ Types by Display
 ### Collection of scripts and code used for our [Types exhibition](https://www.facebook.com/events/939127946101339/?fref=ts) ###
 
 
+![Types by Display](https://scontent-a-lga.xx.fbcdn.net/hphotos-xaf1/t31.0-8/1965411_10154814686660094_8670772843428719457_o.jpg)
+
+
+
 About
 -------------
 
