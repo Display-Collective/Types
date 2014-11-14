@@ -1,0 +1,15 @@
+{
+  "scale": 1,
+  "detail": "1",
+  "height": "1",
+  "rotate": 0,
+  "offsetY": 0,
+  "offsetX": 0,
+  "width": "10",
+  "incrementer": 512,
+  "zone": [
+    262,
+    525
+  ],
+  "multiplier": 0.25
+}

@@ -1,0 +1,1808 @@
+	<html  LANG=en-GB>
+		<head PROFILE="http://purl.org/metadata/dublin_core">
+	<link href="/master.css" rel=stylesheet type=text/css>
+	<title>The Lake Applet</title>
+	<meta name="FORMATTER" content="Created with Notepad and a lot of Coffee">
+	<meta name="GENERATOR" content="A harmless drudge">
+			</head>
+		<body bgcolor="#ffffff" text="#000000" alink="#0000c0" 
+vlink="#c00000" link="#0000c0"
+background="" leftmargin=50 rightmargin=50 
+>
+<center>		<font face="Century Gothic,Century Gothic MT,Century Gothic MS,Arial,Helvetica"
+	>
+		<font size=+3>
+The<i>Lake</i><b>Applet</b>
+</font>	</font>
+<hr>
+	</center>
+<br clear=all>
+	
+	<font face="Arial,Helvetica" size=-1>
+<P>LICENSE
+
+<P>This license ("License")  contains rights and restrictions associated
+with use of the accompanying software. Read the License carefully
+before utilizing the software. By using the software you agree to be
+bound by the terms and conditions of this license.
+
+<ol>
+
+<li>Limited License Grant.
+David Griffiths ("The author") grants to you ("Licensee") a nonexclusive, nontransferable, 
+worldwide, royalty-free license to use this The Lake Applet 
+software (the "Software").  Licensee agrees that it shall not use the 
+Software for computer operations of any critical nature.  </li>
+
+<li>Source Code
+Whilst the author may occasionally make source code available, it is NOT 
+in the public domain and the author retains full copyright over it. 
+UNDER NO CIRCUMSTANCES may software be sold containing code derived 
+from this source code without David Griffiths giving his explicit 
+permission.</li>
+ 
+<li>Restrictions.
+The Software is copyrighted and title to all copies is retained by 
+the author.  Licensee shall not make copies of Software, other than 
+a single copy of Software in machine-readable format for back-up or 
+archival purposes and, if applicable, Licensee may print one copy of 
+on-line documentation, in which event all proprietary rights notices 
+on Software and on-line documentation shall be reproduced and applied 
+to all copies.  Unless enforcement of this provision is prohibited by 
+applicable law, Licensee shall not modify, decompile, disassemble, 
+decrypt, extract, or otherwise reverse engineer Software.  Software 
+may not be transferred, leased, assigned, or sublicensed, in whole or 
+in part.</li>
+ 
+<li>Disclaimer of Warranty.
+The Software is provided "AS IS," without a warranty of any kind.  
+ALL EXPRESS OR IMPLIED REPRESENTATIONS AND WARRANTIES, INCLUDING ANY 
+IMPLIED WARRANTY OF MERCHANT-ABILITY, FITNESS FOR A PARTICULAR PURPOSE 
+OR NON-INFRINGEMENT, ARE HEREBY EXCLUDED. </li>
+
+<li>Limitation of Liability.
+IN NO EVENT WILL THE AUTHOR BE LIABLE FOR ANY LOST REVENUE,
+PROFIT OR DATA,  OR FOR DIRECT, INDIRECT, SPECIAL, CONSEQUENTIAL,
+INCIDENTAL OR PUNITIVE DAMAGES HOWEVER CAUSED AND REGARDLESS OF THEORY
+OF LIABILITY ARISING OUT OF THE USE OF OR INABILITY TO USE  SOFTWARE,
+EVEN IF THE AUTHOR HAS BEEN ADVISED OF THE POSSIBILITY OF SUCH DAMAGES.</li>
+
+<li>Termination.  
+Licensee may terminate this License at any time by destroying all 
+copies of Software including any documentation.  This License will 
+terminate immediately without notice from David Griffiths if Licensee fails 
+to comply with any provision of this License.  Upon termination, 
+Licensee must destroy all copies of Software.  </li>
+
+<li>Severability. 
+If any of the above provisions are held to be in violation of applicable 
+law, void, or unenforceable  in any jurisdiction, then such provisions 
+are herewith waived to the extent necessary for the License to be 
+otherwise enforceable in such jurisdiction,   However, if in 
+the author's opinion deletion of any provisions of the License by 
+operation of this paragraph  unreasonably compromises the rights or 
+liabilities of the author, David Griffiths reserves the 
+right to terminate the License and refund the fee paid by Licensee as 
+Licensee's sole and exclusive remedy.  </li>
+
+<li>Integration. 
+This Agreement is the entire agreement between Licensee and David Griffiths 
+relating to Software and: (i) supersedes all prior or contemporaneous 
+oral or written communications, proposals and representations with 
+respect to its subject matter; and (ii) prevails over any conflicting 
+or additional terms of any quote, order, acknowledgment, or similar 
+communication between the parties during the term of this Agreement. 
+No modification to the Agreement will be binding, unless in writing 
+and signed by a duly authorized representative of each party.</li>
+</ol>
+</font>
+
+<P>
+		<h2>				Congratulations...			</h2>
+	<dir>
+		...upon choosing this product. Not only will it improve your health,
+and enhance your general spirituality, it will also clean the bath, cook
+you breakfast, take care of the children, end armed conflict and 
+invigorate the look of your web page.
+	</dir>
+
+<P>
+		<h2>				Introduction			</h2>
+	<dir>
+		
+<P>You should be careful to check that your unzipping program has named 
+the files correctly. Some DOS programs will name according to the old 
+8.3 format, rename .class files "*.cla".
+	</dir>
+
+			
+<P>
+		<h2>				The Gallery Example			</h2>
+	<dir>
+		<a name="theapplet">
+<center>
+<applet code=lake name=lake1 width=250 height=250>
+<param name=image value="scenic.jpg">
+<param name=href 
+  value="http://www.demon.co.uk/davidg/spigots.htm">
+</applet>
+
+<form>
+<img src="sunset_button.jpg" 
+  onmouseup="lake1.setImageValue('sunset.jpg');">
+<img src="city_button.jpg"
+  onmouseup="lake1.setImageValue('city.jpg');">
+<img src="scenic_button.jpg" 
+  onmouseup="lake1.setImageValue('scenic.jpg');">
+<img src="clouds_button.jpg"
+  onmouseup="lake1.setImageValue('clouds.jpg');">
+<br>
+<input type=checkbox value="Rocking on" 
+  onClick="lake1.toggleRocking();">Rocking
+<br>
+<input type=checkbox value="Underwater on" 
+  onClick="lake1.toggleUnderwater();">Underwater
+</form></center>
+<b>NB:</b> If you cannot see an applet above, then 
+you may need to extract more files from the .ZIP archive before reading
+this page.
+<P>The code which produces the above is:
+	<P><table cellpadding=5><td bgcolor="#ffffc0">
+<pre><font face="Courier New,Courier" size=-1>
+&lt;applet code=lake name=lake1 width=250 height=250&gt;
+&lt;param name=image value="scenic.jpg"&gt;
+&lt;param name=href 
+  value="http://www.demon.co.uk/davidg/spigots.htm"&gt;
+&lt;/applet&gt;
+
+&lt;form&gt;
+&lt;img src="sunset_button.jpg" 
+  onmouseup="lake1.setImageValue('sunset.jpg');"&gt;
+&lt;img src="city_button.jpg"
+  onmouseup="lake1.setImageValue('city.jpg');"&gt;
+&lt;img src="scenic_button.jpg" 
+  onmouseup="lake1.setImageValue('scenic.jpg');"&gt;
+&lt;img src="clouds_button.jpg"
+  onmouseup="lake1.setImageValue('clouds.jpg');"&gt;
+&lt;br&gt;
+&lt;input type=checkbox value="Rocking on" 
+  onClick="lake1.toggleRocking();"&gt;Rocking
+&lt;br&gt;
+&lt;input type=checkbox value="Underwater on" 
+  onClick="lake1.toggleUnderwater();"&gt;Underwater
+&lt;/form&gt;</font></pre></td></table>
+	</dir>
+
+<P>
+		<h2>				Paying for the Applet			</h2>
+	<dir>
+		
+
+<P>There is NOTHING to pay. The applet is completely free. However, if you make a donation ($5 - $10?) to <a href="http://www.tyhafan.org/">Ty Hafan, Children's Hospice of Wales</a>, which is a charitable appeal formed to build, equip and run a Children's Hospice in 
+Wales to provide care for terminally ill children, you can consider your applet well-and-truly registered. Click <a href="http://www.tyhafan.org/donations/">here for details on how to make a donation</a>. They now have an excellent new <a href="https://tyhafan.securewebsites.com/cconline/">OnLine donation page</a>. In just a few minutes you can change a few old, crinkly, dirty little bank notes into a nice warm glow...
+	</dir>
+
+		<P>
+		<h2>				New features in version 4.0			</h2>
+	<dir>
+		<ul>
+	
+<li>
+		<strong>
+		Speed configurable		</strong>
+	<br>
+You can now change the speed of the wave animation. To do this change the &quot;speed&quot; parameter to a value from 1 - 100 (the default is 50).
+</li>
+<br clear=all><P>
+
+<li>
+		<strong>
+		Horizons inside the image		</strong>
+	<br>
+For an image of, say, an ocean, you may not want to reflect the image, but animate the water instead. You can now animate entirely within an image by setting a "horizon" value.
+</li>
+<br clear=all><P>
+
+</ul>
+
+	</dir>
+
+		<P>
+		<h2>				The Dummy's Guide			</h2>
+	<dir>
+		If you get lost following these instructions, then there is an online  "Dummy's Guide" at <a href="http://www.spigots.com/lakeinst.htm">http://www.spigots.com/lakeinst.htm</a>. I shall continue to update this guide to cover any steps that people find problematical.
+	</dir>
+
+
+<P>
+		<h2>				Using lake in a web page (With FrontPage 98)			</h2>
+	<dir>
+		<ol>
+	<li>
+	Create a (temporary) directory for the files (e.g. c:\lake)</li>
+<br clear=all><P>
+
+<li>
+	Unzip all of the files into the directory</li>
+<br clear=all><P>
+
+<li>
+	Start FrontPage 98</li>
+<br clear=all><P>
+
+<li>
+	Open the appropriate web</li>
+<br clear=all><P>
+
+<li>
+	Change to the folder in the web that contains the page which will contain the lake</li>
+<br clear=all><P>
+
+<li>
+	Choose "File/Import" from the menu</li>
+<br clear=all><P>
+
+<li>
+	When the "Import" dialog appears, click the "Add File" button.</li>
+<br clear=all><P>
+
+<li>
+	Change the "Open File" dialog to the lake directory (e.g. c:\lake)</li>
+<br clear=all><P>
+
+<li>
+	Select all of the files in the directory (you can do this by clicking the first file, then holding down the "CTRL" key and clicking each of the    other files in sequence)</li>
+<br clear=all><P>
+
+<li>
+	Click the "Open" button to close the "Open File" dialog.</li>
+<br clear=all><P>
+
+<li>
+	Click the "OK" button to start the import of the files.</li>
+<br clear=all><P>
+
+<li>
+	The files should now appear in the contents of the FrontPage folder.</li>
+<br clear=all><P>
+
+<li>
+	Double-click the page that you want to insert a lake in.</li>
+<br clear=all><P>
+
+<li>
+	Once the page opens, move the cursor to the place on it where you want the lake to appear.</li>
+<br clear=all><P>
+
+<li>
+	Choose "Insert/Image..." from the menu</li>
+<br clear=all><P>
+
+<li>
+	When the "Image" dialog appears, change to the folder containing the file you want to appear at the back of the lake. Click this file once and note down (on a piece of paper) the value which appears in the "URL" field. </li>
+<br clear=all><P>
+
+<li>
+	Now click the "OK" button. The image will now be inserted into page. But it will not yet be rippling.</li>
+<br clear=all><P>
+
+<li>
+	Right-click the image and choose "Image properties" from the menu.</li>
+<br clear=all><P>
+
+<li>
+	When the "Image Properties" dialog appears, switch to the "Appearance" tab.</li>
+<br clear=all><P>
+
+<li>
+	In the size section you should have values for the "Width" and "Height" of the image. Note these down on the same piece of paper that you noted the "URL" value on.</li>
+<br clear=all><P>
+
+<li>
+	Click the "Cancel" button.</li>
+<br clear=all><P>
+
+<li>
+	Delete the image you have just inserted. You should be able to do this by just clicking the "Delete" key.</li>
+<br clear=all><P>
+
+<li>
+	Choose "Insert/Advanced/Java Applet" from the menu.</li>
+<br clear=all><P>
+
+<li>
+	In "Applet Source" enter "lake"</li>
+<br clear=all><P>
+
+<li>
+	In the section labelled "Applet Parameters" click on the "Add..." button.</li>
+<br clear=all><P>
+
+<li>
+	Enter "image" in the "Name" field</li>
+<br clear=all><P>
+
+<li>
+	Go to the "Value" field and enter the "URL" value that you previously wrote down on the piece of paper.</li>
+<br clear=all><P>
+
+<li>
+	Click the "OK" button.</li>
+<br clear=all><P>
+
+<li>
+	You should now be back in the "Java Applet Properties" dialog. In the "Size" section, click the mouse in the "Width" field.</li>
+<br clear=all><P>
+
+<li>
+	Replace the current value with the "Width" value that you noted on the
+ piece of paper.</li>
+<br clear=all><P>
+
+<li>
+	Now click your mouse in the "Height" property.</li>
+<br clear=all><P>
+
+<li>
+	VERY IMPORTANT: You should now enter a value that is 1.8 times the value for the height that you noted down on the piece of paper. So, for instance, if you originally noted down a value of "100", you should enter 180 into this field.</li>
+<br clear=all><P>
+
+<li>
+	Click the "OK" button. You should now have a large "J" on the page.</li>
+<br clear=all><P>
+
+<li>
+	To see the applet running, click on the "Preview" tab  at the bottom of the page.</li>
+<br clear=all><P>
+
+<li>
+	You have set up lake to run with a single "image" parameter. You can add other parameters by amending the properties of the applet (by right-clicking the applet in the editor view and then choosing "Applet properties"). For a full list of the parameters that can be used, see below.</li>
+<br clear=all><P>
+
+</ol>
+	</dir>
+
+<P>
+		<h2>				Using lake in a web page (HTML editors)			</h2>
+	<dir>
+		
+<P>To include lake in a web page, you should copy all class files into the 
+same directory as the web page and then insert an &lt;APPLET...&gt; tag into the page, e.g.
+
+	<P><table cellpadding=5><td bgcolor="#ffffc0">
+<pre><font face="Courier New,Courier" size=-1>
+&lt;applet code="lake" width= height=&gt;
+  &lt;param name="image" value="sunset.jpg"&gt; 
+  &lt;param name="href" 
+    value="http://www.demon.co.uk/davidg/spigots.htm"&gt; 
+&lt;/applet&gt;</font></pre></td></table>
+
+<P>Each of the "PARAM" tags passes a value to the applet. The examples
+shown here are the "image" parameter and the "href" parameter. In general the "PARAM" tag has the following format:
+
+	<P><table cellpadding=5><td bgcolor="#ffffc0">
+<pre><font face="Courier New,Courier" size=-1>
+&lt;PARAM name="[PARAMETER NAME]" value="[PARAMETER VALUE]"&gt;
+</font></pre></td></table>
+
+<P>Note that in Communicator 4.5 you will need to insert the tags in one at a time. Do this by choosing "Insert/HTML Tag..." from the menu for the &lt;applet...&gt; tag, then each of the &lt;param...&gt; tags and so on.
+
+For a full list of the parameters that can be passed to lake, see below.
+
+	</dir>
+
+<P>
+		<h2>				Parameters that can be passed to lake			</h2>
+	<dir>
+		
+<P>The following parameters can be passed to the lake:
+
+
+
+
+
+
+	<P>	<h3>		The <CODE>IMAGE</CODE> parameter			</h3>
+<br clear=all>
+			
+
+<P>JPG or GIF file that you want to reflect.
+<P>
+<center>
+	<script language="JavaScript"><!-- 
+		var tx1;
+	tx1 = "";
+tx1 = tx1 + "\<applet code=lake width=250 height=250>";
+tx1 = tx1 + "\<param name=image value=\"scenic.jpg\">";
+tx1 = tx1 + "\<"+"/applet>";
+	if ((navigator.appVersion.substring(0, 1) == 4) && (navigator.appVersion.indexOf("MSIE") >= 0))		document.write(tx1);
+	// --></script>
+
+	<P><table cellpadding=5><td bgcolor="#ffffc0">
+<pre><font face="Courier New,Courier" size=-1>
+&lt;applet code=lake width=250 height=250&gt;
+&lt;param name=image value="scenic.jpg"&gt;
+&lt;/applet&gt;
+</font></pre></td></table>
+</center>
+
+	
+
+
+
+
+
+	<P>	<h3>		The <CODE>OVERLAY</CODE> parameter			</h3>
+<br clear=all>
+			
+
+<P>The JPG or GIF file that you want to appear over the animated image. Quite frequently an overlay would be
+a GIF file, so that parts of it can be made transparent and allow the
+lake image to show through.
+
+<P>
+<center>
+	<script language="JavaScript"><!-- 
+		var tx1;
+	tx1 = "";
+tx1 = tx1 + "\<applet code=lake width=250 height=250>";
+tx1 = tx1 + "\<param name=image value=\"scenic.jpg\">";
+tx1 = tx1 + "\<param name=overlay value=\"dglogo.gif\">";
+tx1 = tx1 + "\<"+"/applet>";
+	if ((navigator.appVersion.substring(0, 1) == 4) && (navigator.appVersion.indexOf("MSIE") >= 0))		document.write(tx1);
+	// --></script>
+
+	<P><table cellpadding=5><td bgcolor="#ffffc0">
+<pre><font face="Courier New,Courier" size=-1>
+&lt;applet code=lake width=250 height=250&gt;
+&lt;param name=image value="scenic.jpg"&gt;
+&lt;param name=overlay value="dglogo.gif"&gt;
+&lt;/applet&gt;
+</font></pre></td></table>
+</center>
+
+	
+
+
+
+
+
+	<P>	<h3>		The <CODE>HORIZON</CODE> parameter			</h3>
+<br clear=all>
+			
+
+<P>The HORIZON parameter allows you to have a visual horizon within the image. This is useful in situations where the image already has water and a horizon in it. In this example the original example is placed next to the lake version. Notice how the applet is exactly the same size as the original image. This is because it is animating part of the image, rather than reflecting it.
+
+<P>
+<center>
+	<script language="JavaScript"><!-- 
+		var tx1;
+	tx1 = "";
+tx1 = tx1 + "\<img src=\"horizon.jpg\" width=250 height=183 align=left>";
+tx1 = tx1 + "\<applet code=lake width=250 height=183>";
+tx1 = tx1 + "\<param name=image value=\"horizon.jpg\">";
+tx1 = tx1 + "\<param name=horizon value=\"96\">";
+tx1 = tx1 + "\<"+"/applet>";
+	if ((navigator.appVersion.substring(0, 1) == 4) && (navigator.appVersion.indexOf("MSIE") >= 0))		document.write(tx1);
+	// --></script>
+
+	<P><table cellpadding=5><td bgcolor="#ffffc0">
+<pre><font face="Courier New,Courier" size=-1>
+&lt;img src="horizon.jpg" width=250 height=183 align=left&gt;
+&lt;applet code=lake width=250 height=183&gt;
+&lt;param name=image value="horizon.jpg"&gt;
+&lt;param name=horizon value="96"&gt;
+&lt;/applet&gt;
+</font></pre></td></table>
+</center>
+
+	
+
+
+
+
+
+	<P>	<h3>		The <CODE>HREF</CODE> parameter			</h3>
+<br clear=all>
+			
+
+<P>The URL to link to when the applet is clicked. By default this is http://www.spigots.com/spigots.htm .
+
+<P>
+<center>
+	<script language="JavaScript"><!-- 
+		var tx1;
+	tx1 = "";
+tx1 = tx1 + "\<applet code=lake width=250 height=250>";
+tx1 = tx1 + "\<param name=image value=\"scenic.jpg\">";
+tx1 = tx1 + "\<param name=href value=\"http://www.javasoft.com\">";
+tx1 = tx1 + "\<"+"/applet>";
+	if ((navigator.appVersion.substring(0, 1) == 4) && (navigator.appVersion.indexOf("MSIE") >= 0))		document.write(tx1);
+	// --></script>
+
+	<P><table cellpadding=5><td bgcolor="#ffffc0">
+<pre><font face="Courier New,Courier" size=-1>
+&lt;applet code=lake width=250 height=250&gt;
+&lt;param name=image value="scenic.jpg"&gt;
+&lt;param name=href value="http://www.javasoft.com"&gt;
+&lt;/applet&gt;
+</font></pre></td></table>
+</center>
+
+	
+
+
+
+
+
+	<P>	<h3>		The <CODE>TARGET</CODE> parameter			</h3>
+<br clear=all>
+			
+
+<P>This is the name of the frame you want any linked
+page to appear in. 	<script language="JavaScript"><!-- 
+		var tx1;
+	tx1 = "";
+tx1 = tx1 + "Click on the example here and see the linked page appear in a new frame called \"newframe\".";
+	if ((navigator.appVersion.substring(0, 1) == 4) && (navigator.appVersion.indexOf("MSIE") >= 0))		document.write(tx1);
+	// --></script>
+
+<P>
+<center>
+	<script language="JavaScript"><!-- 
+		var tx1;
+	tx1 = "";
+tx1 = tx1 + "\<applet code=lake width=250 height=250>";
+tx1 = tx1 + "\<param name=image value=\"scenic.jpg\">";
+tx1 = tx1 + "\<param name=href value=\"http://www.microsoft.com\">";
+tx1 = tx1 + "\<param name=target value=\"newframe\">";
+tx1 = tx1 + "\<"+"/applet>";
+	if ((navigator.appVersion.substring(0, 1) == 4) && (navigator.appVersion.indexOf("MSIE") >= 0))		document.write(tx1);
+	// --></script>
+
+	<P><table cellpadding=5><td bgcolor="#ffffc0">
+<pre><font face="Courier New,Courier" size=-1>
+&lt;applet code=lake width=250 height=250&gt;
+&lt;param name=image value="scenic.jpg"&gt;
+&lt;param name=href value="http://www.microsoft.com"&gt;
+&lt;param name=target value="newframe"&gt;
+&lt;/applet&gt;
+</font></pre></td></table>
+</center>
+
+	
+
+
+
+
+	<P>	<h3>		The <CODE>UNDERWATER</CODE> parameter			</h3>
+<br clear=all>
+			
+
+<P>TRUE if the image is to appear reflected on the underside of the water.
+<P>
+<center>
+	<script language="JavaScript"><!-- 
+		var tx1;
+	tx1 = "";
+tx1 = tx1 + "\<applet code=lake width=250 height=250>";
+tx1 = tx1 + "\<param name=image value=\"scenic.jpg\">";
+tx1 = tx1 + "\<param name=underwater value=\"true\">";
+tx1 = tx1 + "\<"+"/applet>";
+	if ((navigator.appVersion.substring(0, 1) == 4) && (navigator.appVersion.indexOf("MSIE") >= 0))		document.write(tx1);
+	// --></script>
+
+	<P><table cellpadding=5><td bgcolor="#ffffc0">
+<pre><font face="Courier New,Courier" size=-1>
+&lt;applet code=lake width=250 height=250&gt;
+&lt;param name=image value="scenic.jpg"&gt;
+&lt;param name=underwater value="true"&gt;
+&lt;/applet&gt;
+</font></pre></td></table>
+</center>
+
+	
+
+
+
+	<P>	<h3>		The <CODE>ROCKING</CODE> parameter			</h3>
+<br clear=all>
+			
+
+<P>Set to TRUE if you want the boat rocking.
+<P>If you set the "ROCKING" parameter to "TRUE" then you almost certainly
+need to reduce the height of the applet. 
+
+<P>
+<center>
+	<script language="JavaScript"><!-- 
+		var tx1;
+	tx1 = "";
+tx1 = tx1 + "\<applet code=lake width=250 height=220>";
+tx1 = tx1 + "\<param name=image value=\"scenic.jpg\">";
+tx1 = tx1 + "\<param name=rocking value=\"true\">";
+tx1 = tx1 + "\<"+"/applet>";
+	if ((navigator.appVersion.substring(0, 1) == 4) && (navigator.appVersion.indexOf("MSIE") >= 0))		document.write(tx1);
+	// --></script>
+
+	<P><table cellpadding=5><td bgcolor="#ffffc0">
+<pre><font face="Courier New,Courier" size=-1>
+&lt;applet code=lake width=250 height=220&gt;
+&lt;param name=image value="scenic.jpg"&gt;
+&lt;param name=rocking value="true"&gt;
+&lt;/applet&gt;
+</font></pre></td></table>
+</center>
+
+	
+	</dir>
+
+
+
+
+
+<P>
+		<h2>				Sizing and other matters			</h2>
+	<dir>
+		
+<P>You will need to set the height of the applet by trial and error.
+Start off with the height equal to about 1.8 * height of original image. The only exception to this rule is if you are using the "Horizon" parameter, in which case you should set the image to the size of the image being used. 
+<P>If you can still see a gap appearing at the bottom of the applet as
+the waves move backwards and forwards, then you should reduce the height
+a little.
+
+<P>I'd suggest you put the lake.class file in the same directory as the page on 
+which it will appear. If you want to move it elsewhere
+then use the "CODEBASE" option to point to the appropriate directory.
+
+<P>Some implementations of Java will not allow you to put the .class file in one
+subdirectory and the image file in another. If the try it might cause a security
+exception.
+
+	</dir>
+
+		<P>
+		<h2>				Using it with JavaScript			</h2>
+	<dir>
+		
+How does the example applet <a href="#theapplet">above</a> communicate with the images and controls around it?
+
+<P>Well for a start, if you are not using at least version 4 of Netscape or Internet Explorer, it won't be reacting at all. So if clicking on the images and the checkbox are either having no effect or producing an error, that will probably be the reason.
+
+<P>The HTML source for the above is:
+
+	<P><table cellpadding=5><td bgcolor="#ffffc0">
+<pre><font face="Courier New,Courier" size=-1>
+&lt;applet code=lake name=lake1 width=250 height=250&gt;
+&lt;param name=image value="scenic.jpg"&gt;
+&lt;param name=href 
+  value="http://www.demon.co.uk/davidg/spigots.htm"&gt;
+&lt;/applet&gt;
+
+&lt;form&gt;
+&lt;img src="sunset_button.jpg" 
+  onmouseup="lake1.setImageValue('sunset.jpg');"&gt;
+&lt;img src="city_button.jpg"
+  onmouseup="lake1.setImageValue('city.jpg');"&gt;
+&lt;img src="scenic_button.jpg" 
+  onmouseup="lake1.setImageValue('scenic.jpg');"&gt;
+&lt;img src="clouds_button.jpg"
+  onmouseup="lake1.setImageValue('clouds.jpg');"&gt;
+&lt;br&gt;
+&lt;input type=checkbox value="Rocking on" 
+  onClick="lake1.toggleRocking();"&gt;Rocking
+&lt;br&gt;
+&lt;input type=checkbox value="Underwater on" 
+  onClick="lake1.toggleUnderwater();"&gt;Underwater
+&lt;/form&gt;</font></pre></td></table>
+
+<P>There are two important points to note in this code. Firstly, the &lt;applet...&gt; tag has been given a "name" attribute. Secondly, the different image and checkbox controls call methods as if the applet were a form or a text box on the web page. In fact the applet has become part of the browser's object model.
+
+<P>So - what are lake's methods?
+
+	<P>	<h3>		<font face="Courier New">setImageValue(var x)</font>			</h3>
+<br clear=all>
+			<P>setImageValue changes the image that is currently being reflected in the lake. The variable x should the name of a JPG or GIF file accessible by the applet.
+	
+	<P>	<h3>		<font face="Courier New">setOverlayValue(var x)</font>			</h3>
+<br clear=all>
+			<P>setOverlayValue sets the filename of the overlay image.
+	
+
+	<P>	<h3>		<font face="Courier New">setTargetValue(var x)</font>			</h3>
+<br clear=all>
+			<P>setTargetValue sets the target frame of the applet's "href" parameter.
+	
+
+	<P>	<h3>		<font face="Courier New">setHRefValue(var x)</font>			</h3>
+<br clear=all>
+			<P>setHRefValue sets the hyperlink destination for when the applet is clicked.
+	
+
+	<P>	<h3>		<font face="Courier New">setSpeedValue(var x)</font>			</h3>
+<br clear=all>
+			<P>setSpeedValue sets the animation speed (1 - 100).
+	
+
+	<P>	<h3>		<font face="Courier New">setHorizonValue(var x)</font>			</h3>
+<br clear=all>
+			<P>setHorizonValue sets the level of the horizon (1 - height of image).
+	
+
+	<P>	<h3>		<font face="Courier New">setRockingValue(var x)</font>			</h3>
+<br clear=all>
+			<P>setRockingValue sets whether the applet is rocking or not. The value passed should be either "true" or "false".
+	
+	<P>	<h3>		<font face="Courier New">toggleRocking()</font>			</h3>
+<br clear=all>
+			<P>toggleRocking sets the rocking on and off alternately.
+	
+
+	<P>	<h3>		<font face="Courier New">setUnderwaterValue(var x)</font>			</h3>
+<br clear=all>
+			<P>setUnderwaterValue sets whether the image is viewed from underwater or not. The value passed should be either "true" or "false".
+	
+	<P>	<h3>		<font face="Courier New">toggleUnderwater()</font>			</h3>
+<br clear=all>
+			<P>toggleUnderwater sets underwater viewing on and off alternately.
+	
+
+
+	</dir>
+	
+
+<P>
+		<h2>				Troubleshooting			</h2>
+	<dir>
+		
+
+	<P>	<h3>		Blank applet			</h3>
+<br clear=all>
+			<P> If the applet remains blank when it is run off 
+    the server and never shows the image, the chances are there are 
+    problems with the image. If the image is too large then it may 
+    not be able to create the animation in memory. On the other hand, 
+    it may be that the image is not accessible. Have you spelt the 
+    image filename correctly in the 
+			<P><table cellpadding=5><td bgcolor="#ffffc0">
+<pre><font face="Courier New,Courier" size=-1>
+&lt;param name=image...&gt;</font></pre></td></table>
+    line? Again you will need to check the case and also the file 
+    permissions.</li>
+	
+	<P>	<h3>		Gap at the bottom			</h3>
+<br clear=all>
+			<P> If you make the applet too large then you will notice a blank strip 
+    appear at the bottom of it as the waves lap backwards and forwards. 
+    The solution is to make the applet a bit smaller...
+	
+	<P>	<h3>		Positioning the horizon			</h3>
+<br clear=all>
+			<P> On an artistic note, it is not a good idea to use an image that 
+    already has a horizon. If you look across the surface of a lake you 
+    will not see the horizon reflected in the surface. The best solution 
+    is to cut the image *at* the horizon.</li>
+	
+	<P>	<h3>		It's turned upside-down!			</h3>
+<br clear=all>
+			<P> Do not use transparent GIFs with the applet's "image" parameter. 
+    There is no problem using transparent GIFs for the overlay 
+    parameter - in fact this is recommended. You can usually tell if
+    a transparent GIF has been used because the top half of the applet
+    will have parts which appear to be upside down.</li>
+	
+
+	<P>	<h3>		Why won't the applet work off my hard disk?			</h3>
+<br clear=all>
+			<P> Some web browsers have trouble opening applets straight from a hard disk.
+I have noticed this happen with Internet Explorer 3 and Netscape 4. Once 
+you have loaded the class file and the web page onto your web site you 
+should find it works OK. 
+	
+	<P>	<h3>		Why doesn't it open when I double-click it?			</h3>
+<br clear=all>
+			Don't! This is an applet, it is intended for use within web pages. You can't open it
+directly. If you try, it won't harm your computer, but neither will it show you the applet.
+The only way you will be able to see the applet is by inserting it into a web page (using
+these instructions) and then opening the web page.
+	
+	<P>	<h3>		Why does my web page say "Class Format Error"?			</h3>
+<br clear=all>
+			<P> Class files are binary files, just like image files are.  Binary files 
+contain more information than text (also known as ASCII) files do. If 
+you transfer class files as if they were ASCII files then they will 
+lose this extra information and will become corrupted. How do you 
+transfer class files as binary files? You should transfer them in 
+the same way that you transfer image files.
+	
+	<P>	<h3>		Why does my web page say "Class Not Found"?			</h3>
+<br clear=all>
+			<P> This is a very common problem. It may be because of one of the following:
+<ol>
+<li>You have not put the class file onto the web site</li>
+<li>You are not calling the file with the correct name 
+(rename to use the same combination of upper- and 
+lower-case letters as your class file)</li>
+<li>Your transfer program has changed the name. This 
+does happen. Some programs will shorten the ".class" 
+extension to ".cla". Other will change the case of the 
+letters to either all uppercase or all lowercase. See 
+if you can change the options on the transfer program 
+to stop it doing this.</li>
+<li>You have include a "codebase=…" clause inside your
+&lt;applet…&gt; code in your web page. "codebase=…" tells 
+the browser to look some place else for the applet file.</li>
+<li>Some other reason I haven't thought of :-)</li>
+</ol>
+	
+	</dir>
+
+	<P>
+		<h2>				Examples from the Web			</h2>
+	<dir>
+		
+	<P>	<h3>		Site of the Week			</h3>
+<br clear=all>
+			
+<br>This week features a return of the <a href="http://anastasia.permnet.ru">web site</a> that <a href="http://anastasia.permnet.ru/Svetlana.html">Svetlana Bykova</a> created for her daughter <a href="http://anastasia.permnet.ru/Anastasia.html">Anastasia</a>. The site has recently had a re-design, and is a great example of what a personal web site should be: not only quick and easy to use, but also very warm and  full of personality, capturing the relationship between a mother and daughter.
+
+	
+
+
+	<P>	<h3>		The Lake Applet Ring			</h3>
+<br clear=all>
+			<BR>A terribly nice bloke by the name of Bruce Jodoin has started a "Lake applet ring" at
+<a href="http://www.lakeapplets.com">http://www.lakeapplets.com</a>, to help provide links between lake sites on the web, as well as tutorials, a forum, some tea, a little sympathy and a lot advice for anyone having trouble getting it to work. He also has many, many, many lake examples.
+
+<P>Bruce's site is particularly recommended.
+	
+	<P>	<h3>		Tutorials			</h3>
+<br clear=all>
+			<ul>
+	<li>
+		<strong>
+		<a href=http://web.ukonline.co.uk/paul.stephens/pcp/141/Menu141.htm>
+		         Paul Stephen's Web Site		</a>
+		</strong>
+	<br>
+        Hereinafter known as the geezer. Paul gives a much much better
+        tutorial than I do. Really worth a visit if you want to make
+        the most out of lake.</li>
+<br clear=all><P>
+<li>
+		<strong>
+		<a href=http://www.dataplace.com.br/freesite/mag/lake/lakes.htm>
+		Lakes by Aridelson Muller		</a>
+		</strong>
+	<br>
+Interesting tutorials including one about recreating accurately a painting by Caravaggio</li>
+<br clear=all><P>
+<li>
+		<strong>
+		<a href=http://www.krausehouse.com/birds/weekthree.htm>
+		         Week Three Tutorial At the KrauseHouse		</a>
+		</strong>
+	<br>
+</li>
+<br clear=all><P>
+<li>
+		<strong>
+		<a href=http://www.wingnut.demon.co.uk/boatie.html>
+		Ripply Effects in Java		</a>
+		</strong>
+	<br>
+	Contains a tutorial by Andrew Bolt on how to use it. Andrew is also 	the inventor of Java string. Probably my favourite pointless Java 	applet.</li>
+<br clear=all><P>
+<li>
+		<strong>
+		<a href=http://www.vizitura.hu/javalake.htm>
+		http://www.vizitura.hu/javalake.htm		</a>
+		</strong>
+	<br>
+	In Hungarian</li>
+<br clear=all><P>
+</ul>
+	
+	<P>	<h3>		Collections			</h3>
+<br clear=all>
+			<ul>
+	
+
+<li>
+		<strong>
+		<a href=http://www.tarheelsreflections.f2s.com/>
+		A Tarheel's Reflections		</a>
+		</strong>
+	<br>
+Margie & Kelly Kye have created an unfeasonably large collection set of lakes at their site. Very pretty.</li>
+<br clear=all><P>
+
+
+<li>
+		<strong>
+		<a href=http://home.c2i.net/indset/grafikk/ninas_webdesign.htm>
+		Nina's Web Design		</a>
+		</strong>
+	<br>
+Nina has a very nice set of Scandinavian sunsets and landscapes. The most effective one (well I think anyway...) is <a href="http://home.c2i.net/indset/applets/applets7.htm">the sixth</a>, which shows a cloud-shrouded mountain scene. The clouds around the mountain tops cleverly soften the reflections closer to the viewer. Very smart.</li>
+<br clear=all><P>
+
+
+<li>
+		<strong>
+		<a href=http://sirrick1.tripod.com/>
+		Jason's Bryce Pages and Rick's Lake Applets		</a>
+		</strong>
+	<br>
+Rick Byington and his son Jason have created 78 lake applets, using photographs and Bryce 3D images.</li>
+<br clear=all><P>
+<li>
+		<strong>
+		<a href=http://www.cuttingedge-nj.com/lakes/>
+		Some Lake Applets		</a>
+		</strong>
+	<br>
+Wally O has created more lakes than the mind can comfortably imagine.
+	</li>
+<br clear=all><P>
+<li>
+		<strong>
+		<a href=http://www.qcbusiness.com/toemco/lakeart1.htm>
+		Lake effect examples upon classical art		</a>
+		</strong>
+	<br>
+Dan and Lorraine have create some very nice examples based upon Flemish and Italian paintings, which use Java script to change the images dynamically</li>
+<br clear=all><P>
+<li>
+		<strong>
+		<a href=http://www2.cybercities.com/j/jaydax/dgjavalake.htm>
+		Java Lake Applet Pages		</a>
+		</strong>
+	<br>
+	I was pointed to this site by Bruce Jodoin. The Chapman's have spent a lot of time perfecting the use of overlays. If you want to see more examples of how to use this feature, this site is recommended.</li>
+<br clear=all><P>
+<li>
+		<strong>
+		<a href=http://www.crystal-reflections.com/lake.htm>
+		Lake Images		</a>
+		</strong>
+	<br>
+	</li>
+<br clear=all><P>
+<li>
+		<strong>
+		<a href=http://www.geocities.com/Paris/Maison/3310/>
+		The Classical Gallery		</a>
+		</strong>
+	<br>
+	A beautiful sequence of pre-Raphaelite paintings by 
+	J. W. Waterhouse</li>
+<br clear=all><P>
+<li>
+		<strong>
+		<a href=http://www.alternative-hawaii.com/anncecil/reflection/>
+		Ann Cecil's Hawaiian Gallery		</a>
+		</strong>
+	<br>
+	</li>
+<br clear=all><P>
+<li>
+		<strong>
+		<a href=http://www.zworks.com/forever/lakes1.html>
+		Musical Greeting Cards		</a>
+		</strong>
+	<br>
+	</li>
+<br clear=all><P>
+<li>
+		<strong>
+		<a href=http://www.geocities.com/Heartland/Estates/4398/walkergall.html>
+		The Walker Gallery		</a>
+		</strong>
+	<br>
+	</li>
+<br clear=all><P>
+<li>
+		<strong>
+		<a href=http://www.roza-s.com/lake_effects.htm>
+		Lake Effects		</a>
+		</strong>
+	<br>
+	</li>
+<br clear=all><P>
+<li>
+		<strong>
+		<a href=http://members.tripod.com/UncleGus1/>
+		Gus Hallgren's Site		</a>
+		</strong>
+	<br>
+Allegedly the world's
+        largest collection of lakes. Also about the only
+        person on the net to spell my surname correctly... :-) He has a particularly fine set of <a href="http://members.tripod.com/UncleGus1/aanseladams.htm">Ansel Adams</a> photographs. </li>
+<br clear=all><P>
+<li>
+		<strong>
+		<a href=http://www.angelfire.com/az/suncitysue/Novenas.html>
+		Novenas		</a>
+		</strong>
+	<br>
+	The first of a series. For more information about the set, go to
+	the main <a href="http://www.angelfire.com/az/suncitysue/SaintJudeNovena.html">
+	Novena</a> page.</li>
+<br clear=all><P>
+<li>
+		<strong>
+		<a href=http://www.angelfire.com/wy/divil/index.html>
+		Adele's		</a>
+		</strong>
+	<br>
+	Another HUGE collection of lakes</li>
+<br clear=all><P>
+<li>
+		<strong>
+		<a href=http://www.bowcreek.com/lake.html>
+		BowCreek Postcards		</a>
+		</strong>
+	<br>
+	</li>
+<br clear=all><P>
+<li>
+		<strong>
+		<a href=http://www.angelfire.com/ak/olly/lakes.html>
+		World at Our fingers lakes!		</a>
+		</strong>
+	<br>
+	</li>
+<br clear=all><P>
+<li>
+		<strong>
+		<a href=http://www.stonecarver.com/lakecard.html>
+		         lake Applet Postcards		</a>
+		</strong>
+	<br>
+Where the gargoyles live</li>
+<br clear=all><P>
+<li>
+		<strong>
+		<a href=http://art.net/~starhawk/effects.htm>
+		         lake Effects		</a>
+		</strong>
+	<br>
+A sequence of lake images</li>
+<br clear=all><P>
+<li>
+		<strong>
+		<a href=http://www.aeol.com/brycestuff.html>
+		         http://www.aeol.com/brycestuff.html		</a>
+		</strong>
+	<br>
+        Computer-generated rainbows 'n' stuff</li>
+<br clear=all><P>
+<li>
+		<strong>
+		<a href=http://www.angelfire.com/tx/mimms/mylakepics.html>
+		         http://www.angelfire.com/tx/mimms/mylakepics.html		</a>
+		</strong>
+	<br>
+        One of many many many angel sites at angelfire</li>
+<br clear=all><P>
+<li>
+		<strong>
+		<a href=http://home.on.rogers.wave.ca/stratton/>
+		         Stratton's Home Page		</a>
+		</strong>
+	<br>
+Canadian lake Scenes
+        </li>
+<br clear=all><P>
+<li>
+		<strong>
+		<a href=http://ww2.isys.ca/crossley/Main/sitemap.html>
+		         Crossley lakes		</a>
+		</strong>
+	<br>
+Part of <a href="http://ww2.isys.ca/crossley/">
+	North Cross Designs</a>
+        </li>
+<br clear=all><P>
+<li>
+		<strong>
+		<a href=http://www.pagesbyjustme.com/>
+		Laura Baker		</a>
+		</strong>
+	<br>
+</li>
+<br clear=all><P>
+</ul>
+	
+	<P>	<h3>		Personal Home Pages			</h3>
+<br clear=all>
+			<ul>
+	<li>
+		<strong>
+		<a href=http://fayclark.home.texas.net/ovcanmemorial.htm>
+		Ovarian Cancer Memorial		</a>
+		</strong>
+	<br>
+	Memorial to Charlotte Faye Clark</li>
+<br clear=all><P>
+<li>
+		<strong>
+		<a href=http://skyboom.com/hooker/index50.html>
+		Chris Underwater		</a>
+		</strong>
+	<br>
+An example of the underwater parameter</li>
+<br clear=all><P>
+<li>
+		<strong>
+		<a href=http://net.saddleback.cc.ca.us/gstimson0/>
+		Larry's Page		</a>
+		</strong>
+	<br>
+</li>
+<br clear=all><P>
+<li>
+		<strong>
+		<a href=http://www.geocities.com/SiliconValley/Garage/2586/lake.html>
+		Lake Applets		</a>
+		</strong>
+	<br>
+	Several lakes by Dianne Davies</li>
+<br clear=all><P>
+<li>
+		<strong>
+		<a href=http://members.xoom.com/ahl4one/river2.html>
+		The Lake Applet		</a>
+		</strong>
+	<br>
+	Nice overlay effect to create a flowing river</li>
+<br clear=all><P>
+<li>
+		<strong>
+		<a href=http://www.geocities.com/Heartland/Park/7324/hideNseek.html>
+		Hide and Seek With Angels		</a>
+		</strong>
+	<br>
+	Recommended</li>
+<br clear=all><P>
+<li>
+		<strong>
+		<a href=http://www.geocities.com/Nashville/9949/lake.html>
+		         Daybreak		</a>
+		</strong>
+	<br>
+Particularly recommended. One of the most
+	pleasing lake images I have seen. There is 
+	a <a href="http://www.geocities.com/Nashville/9949/lake2.html">
+	second one</a> which is possibly even better. Note especially
+	the positioning of the fingers which appear to be touching the surface of
+	the water.</li>
+<br clear=all><P>
+<li>
+		<strong>
+		<a href=http://www.lovisti.dk/elake.htm>
+		Funlinks and Download		</a>
+		</strong>
+	<br>
+	</li>
+<br clear=all><P>
+<li>
+		<strong>
+		<a href=http://hometown.aol.com/brezi33/BREZI33/empoeium.htm>
+		Brezi's Emporium		</a>
+		</strong>
+	<br>
+	</li>
+<br clear=all><P>
+<li>
+		<strong>
+		<a href=http://members.tripod.com/~RichardHarrison/LakeImagesLinks.html>
+		Lake Images - Links		</a>
+		</strong>
+	<br>
+	Reflection of the comet Hale-Bopp.</li>
+<br clear=all><P>
+<li>
+		<strong>
+		<a href=http://members.tripod.com/AppleGal/index.html>
+		ApplesHomepage		</a>
+		</strong>
+	<br>
+</li>
+<br clear=all><P>
+<li>
+		<strong>
+		<a href=http://www.stans.com/digregor/Greetings2.htm>
+		DiGregor Family Homepage		</a>
+		</strong>
+	<br>
+	Clever use of the overlay.</li>
+<br clear=all><P>
+<li>
+		<strong>
+		<a href=http://members.tripod.com/~cmikew/midi/index35.html>
+		Titanic		</a>
+		</strong>
+	<br>
+	Mike Welch's animation of the famous White Star lubble bubble... gurgle.... splurt... :-)</li>
+<br clear=all><P>
+<li>
+		<strong>
+		<a href=http://home.pacific.net.sg/~toladl>
+		hOme page		</a>
+		</strong>
+	<br>
+	Nice use of colour.</li>
+<br clear=all><P>
+<li>
+		<strong>
+		<a href=http://www.halcyon.com/dpeterso/>
+		DP's Famous Web Site		</a>
+		</strong>
+	<br>
+</li>
+<br clear=all><P>
+<li>
+		<strong>
+		<a href=http://home.earthlink.net/~laineyg/noone.html>
+		Lainey's 'No One But The Clown'		</a>
+		</strong>
+	<br>
+	Part of her <a href="http://home.earthlink.net/~laineyg/art.htm">Artist's Hangout</a></li>
+<br clear=all><P>
+<li>
+		<strong>
+		<a href=http://members.aol.com/JRMFEL/wolfs.html>
+		Wolf's lake		</a>
+		</strong>
+	<br>
+	By the artist Janet Fellows. See also <a href="http://members.aol.com/JRMFEL/creation.html">
+	Creation of Adam</a>.</li>
+<br clear=all><P>
+<li>
+		<strong>
+		<a href=http://www.geocities.com/Athens/Oracle/7943/>
+		Southern Cybersoul		</a>
+		</strong>
+	<br>
+	</li>
+<br clear=all><P>
+<li>
+		<strong>
+		<a href=http://www.psnw.com/~geo/flame.html>
+		George Horiuchi's "Flame"		</a>
+		</strong>
+	<br>
+	An interesting combination of the lake and Ripple applets</li>
+<br clear=all><P>
+<li>
+		<strong>
+		<a href=http://geocities.com/Heartland/Ridge/7550/>
+		         DAPeach's Home in the North Georgia Mountains		</a>
+		</strong>
+	<br>
+        A nice wet rose</li>
+<br clear=all><P>
+<li>
+		<strong>
+		<a href=http://www.qtm.net/~misseghers/>
+		         The Misseghers Homepage		</a>
+		</strong>
+	<br>
+	Nice wooden frame effect</li>
+<br clear=all><P>
+<li>
+		<strong>
+		<a href=http://members.xoom.com/endless1/earthrise.html>
+		Earthrise		</a>
+		</strong>
+	<br>
+	</li>
+<br clear=all><P>
+<li>
+		<strong>
+		<a href=http://wendyrule.com/>
+		Wendy Rule		</a>
+		</strong>
+	<br>
+        A singing witch, apparently. How very novel.</li>
+<br clear=all><P>
+<li>
+		<strong>
+		<a href=http://www.geocities.com/HotSprings/2422/index.html>
+		         jacireann's Home Page		</a>
+		</strong>
+	<br>
+</li>
+<br clear=all><P>
+<li>
+		<strong>
+		<a href=http://www.geocities.com/ResearchTriangle/4027/>
+		Addicted 2 MODS		</a>
+		</strong>
+	<br>
+</li>
+<br clear=all><P>
+<li>
+		<strong>
+		<a href=http://members.aol.com/llivins/Sunrise/Sunrise.htm>
+		         Sunrise at Whitesbog		</a>
+		</strong>
+	<br>
+</li>
+<br clear=all><P>
+<li>
+		<strong>
+		<a href=http://members.xoom.com/Cheathams/>
+		         Cheathams Corner		</a>
+		</strong>
+	<br>
+</li>
+<br clear=all><P>
+<li>
+		<strong>
+		<a href=http://www.geocities.com/SouthBeach/Marina/4058/index.html>
+		         Suwannee River		</a>
+		</strong>
+	<br>
+</li>
+<br clear=all><P>
+<li>
+		<strong>
+		<a href=http://www.geocities.com/Heartland/Flats/6473/index.html>
+		         waseeka's Home Page		</a>
+		</strong>
+	<br>
+</li>
+<br clear=all><P>
+<li>
+		<strong>
+		<a href=http://www.geocities.com/Hollywood/Hills/1926/sydney.htm>
+		         Sydney		</a>
+		</strong>
+	<br>
+'Struth Sheila. One from Oz. Talking of which, why
+        not visit my very good friend
+        <a href="http://www.geocities.com/HotSprings/Villa/3132/index.html">
+        Robin Haywood</a>'s web site?</li>
+<br clear=all><P>
+<li>
+		<strong>
+		<a href=http://www.geocities.com/SouthBeach/Shores/6118/poem.html>
+		         April and Honey's Homepage		</a>
+		</strong>
+	<br>
+</li>
+<br clear=all><P>
+<li>
+		<strong>
+		<a href=http://www.angelfire.com/tx/mimms/mylakepics.html>
+		         Vikki's Place		</a>
+		</strong>
+	<br>
+</li>
+<br clear=all><P>
+<li>
+		<strong>
+		<a href=http://www.geocities.com/SoHo/Square/6834/>
+		         Georgia Boy		</a>
+		</strong>
+	<br>
+</li>
+<br clear=all><P>
+</ul>
+	
+	<P>	<h3>		Places			</h3>
+<br clear=all>
+			<ul>
+	<li>
+		<strong>
+		<a href=http://members.aol.com/eddyduvall/page4.html>
+		Louisville Kentucky		</a>
+		</strong>
+	<br>
+Nice example of an overlay</li>
+<br clear=all><P>
+<li>
+		<strong>
+		<a href=http://www.cubaweb.cu/>
+		Cuba's Official Web Site		</a>
+		</strong>
+	<br>
+Well I never....</li>
+<br clear=all><P>
+<li>
+		<strong>
+		<a href=http://manorinn.com/>
+		         Manor Inn - Yarmouth, Nova Scotia		</a>
+		</strong>
+	<br>
+Tastefully done</li>
+<br clear=all><P>
+<li>
+		<strong>
+		<a href=http://www.portsmouth.va.us/tourism/docs/tourism.htm>
+		         Portsmouth Virginia - Tourism		</a>
+		</strong>
+	<br>
+</li>
+<br clear=all><P>
+<li>
+		<strong>
+		<a href=http://www.city.norfolk.va.us/index.html>
+		         The City of Norfolk Virginia Official Web Site		</a>
+		</strong>
+	<br>
+	Bit of competition between these two I think...</li>
+<br clear=all><P>
+<li>
+		<strong>
+		<a href=http://www.licia.org/>
+		Lauderdale Isles Civic Improvement Association		</a>
+		</strong>
+	<br>
+	</li>
+<br clear=all><P>
+<li>
+		<strong>
+		<a href=http://www.blackpool.gov.uk/>
+		Blackpool Council Homepage		</a>
+		</strong>
+	<br>
+	</li>
+<br clear=all><P>
+</ul>
+	
+	<P>	<h3>		Others			</h3>
+<br clear=all>
+			<ul>
+	
+<li>
+		<strong>
+		<a href=http://www.ussarcherfish.com/afishpic/testlake/testlake.htm>
+		U.S.S. Archerfish		</a>
+		</strong>
+	<br>
+A lake image of the American submarine, complete with an animated flag.</li>
+<br clear=all><P>
+<li>
+		<strong>
+		<a href=http://lonestar.texas.net/~sharkmaw/cyuggah.html>
+		C'Yuggah Sleeps		</a>
+		</strong>
+	<br>
+An example of the &quot;Horizon&quot; parameter</li>
+<br clear=all><P>
+<li>
+		<strong>
+		<a href=http://welcome.to/sligobaylifeboat>
+		Sligo Bay Lifeboat		</a>
+		</strong>
+	<br>
+</li>
+<br clear=all><P>
+<li>
+		<strong>
+		<a href=http://chelmarsh.mariner.co.uk/>
+		Chelmarsh Sailing Club		</a>
+		</strong>
+	<br>
+</li>
+<br clear=all><P>
+<li>
+		<strong>
+		<a href=http://animal.com.ar/>
+		A.N.I.M.A.L		</a>
+		</strong>
+	<br>
+</li>
+<br clear=all><P>
+<li>
+		<strong>
+		<a href=http://homepages.which.net/~m.davies/vikings.html >
+		The Vikings		</a>
+		</strong>
+	<br>
+</li>
+<br clear=all><P>
+<li>
+		<strong>
+		<a href=http://www.webacademie.ch/club/cours/sib03/jhlywa/Frothers.htm>
+		Jeziorak Lake		</a>
+		</strong>
+	<br>
+Nice example of an overlay</li>
+<br clear=all><P>
+<li>
+		<strong>
+		<a href=http://members.aol.com/avalon98/guestbook.html>
+		Avalon OnLine Guestbook		</a>
+		</strong>
+	<br>
+ 
+	Another nice use of an overlay. Part of the
+	<a href="http://members.aol.com/avalon98/">Avalon official
+	fanpage</a>.
+	</li>
+<br clear=all><P>
+<li>
+		<strong>
+		<a href=http://www.bootsfahrschulen.de/>
+		Boots & Yachtschulen Zimara		</a>
+		</strong>
+	<br>
+ 
+	</li>
+<br clear=all><P>
+<li>
+		<strong>
+		<a href=http://www.chucksplace.net/ranger/ranger2.htm>
+		The USS Ranger Web Site		</a>
+		</strong>
+	<br>
+ 
+	</li>
+<br clear=all><P>
+<li>
+		<strong>
+		<a href=http://www.intellex.com/~boatman/>
+		Tenkiller Marine Service		</a>
+		</strong>
+	<br>
+ 
+	</li>
+<br clear=all><P>
+<li>
+		<strong>
+		<a href=http://www.625.simplenet.com/tv_logos/java/thames_anim.htm>
+		THAMES by Day and Night		</a>
+		</strong>
+	<br>
+	</li>
+<br clear=all><P>
+<li>
+		<strong>
+		<a href=http://www.geocities.com/~cowpokinfun/waterwheel.htm>
+		CowPokin' Fun - Watson Water Wheel		</a>
+		</strong>
+	<br>
+	</li>
+<br clear=all><P>
+<li>
+		<strong>
+		<a href=http://webspace.dialnet.com/churchmead_school>
+		Churchmead School		</a>
+		</strong>
+	<br>
+	</li>
+<br clear=all><P>
+<li>
+		<strong>
+		<a href=http://web.dbtech.net/~jp532/schedule>
+		Shelton State Class Schedule		</a>
+		</strong>
+	<br>
+	</li>
+<br clear=all><P>
+<li>
+		<strong>
+		<a href=http://artpro.net/>
+		ArtPro Web Design		</a>
+		</strong>
+	<br>
+	</li>
+<br clear=all><P>
+<li>
+		<strong>
+		<a href=http://www.zauberwald.net/>
+		Die Zauberwald-Seite		</a>
+		</strong>
+	<br>
+	</li>
+<br clear=all><P>
+<li>
+		<strong>
+		<a href=http://www.andyart.com/jt_jjs.htm>
+		         Andy Art		</a>
+		</strong>
+	<br>
+Lots of free graphics as well</li>
+<br clear=all><P>
+<li>
+		<strong>
+		<a href=http://home.clara.net/lilli/applet1.htm>
+		         Wonderful World Of Java		</a>
+		</strong>
+	<br>
+</li>
+<br clear=all><P>
+<li>
+		<strong>
+		<a href=http://www.march.co.uk/oopages.html>
+		         March Object Oriented Pages		</a>
+		</strong>
+	<br>
+</li>
+<br clear=all><P>
+<li>
+		<strong>
+		<a href=http://www.bayweb.com.au/actionaddict/>
+		         Photoshop Actions Archive - Action Addict V2.0		</a>
+		</strong>
+	<br>
+</li>
+<br clear=all><P>
+<li>
+		<strong>
+		<a href=http://www.syrena.de/s_applet.htm>
+		         http://www.syrena.de/s_applet.htm		</a>
+		</strong>
+	<br>
+</li>
+<br clear=all><P>
+<li>
+		<strong>
+		<a href=http://stars.com/Multimedia/Java/>
+		         WDVL - The Java Universe		</a>
+		</strong>
+	<br>
+        Opening image of the Web Developer's Library's most
+        righteous site</li>
+<br clear=all><P>
+<li>
+		<strong>
+		<a href=http://www.fortunecity.com/victorian/memorial/118/indexe.html>
+		         Amateur Picture Gallery		</a>
+		</strong>
+	<br>
+</li>
+<br clear=all><P>
+<li>
+		<strong>
+		<a href=http://www.lviv.gu.net/main/zms/index.html>
+		         ZMS World		</a>
+		</strong>
+	<br>
+</li>
+<br clear=all><P>
+<li>
+		<strong>
+		<a href=http://wounded.fsn.net/ring.html>
+		         Victims No More		</a>
+		</strong>
+	<br>
+</li>
+<br clear=all><P>
+<li>
+		<strong>
+		<a href=http://members.home.net/spring2/>
+		         Springtide Online '98		</a>
+		</strong>
+	<br>
+</li>
+<br clear=all><P>
+<li>
+		<strong>
+		<a href=http://www.wildlife-n-wicks.com/>
+		         Wildlife-n-Wicks		</a>
+		</strong>
+	<br>
+</li>
+<br clear=all><P>
+<li>
+		<strong>
+		<a href=http://www.angelfire.com/oh/pattlr/index.html>
+		         Midi Mania		</a>
+		</strong>
+	<br>
+</li>
+<br clear=all><P>
+<li>
+		<strong>
+		<a href=http://www.geocities.com/~bihistorians/page4.html>
+		         Bowen Island Historians		</a>
+		</strong>
+	<br>
+</li>
+<br clear=all><P>
+</ul>
+	
+	</dir>
+
+<P>
+		<h2>				Linking to my site			</h2>
+	<dir>
+		<P>If you use this applet then it would be nice if you gave me a link 
+by copying the image:
+
+<P>
+<img src="dglogo.gif">
+<P>(this is the file "dglogo.gif" in the .zip archive) 
+
+into the same directory as your web page and then pasting the following 
+into your page.
+
+	<P><table cellpadding=5><td bgcolor="#ffffc0">
+<pre><font face="Courier New,Courier" size=-1>
+    &lt;a href="http://www.spigots.com/spigots.htm" target="_top"&gt;
+    &lt;img src="dglogo.gif"
+          width=88 height=31 border=0&gt;&lt;/a&gt;
+</font></pre></td></table>
+
+<P>It will put a little button on your page that will link through to my Java Spigots
+page.
+
+<P>It is only a request: feel free to omit it.
+
+	</dir>
+			<P>
+		<h2>				Additional Usage Notes			</h2>
+	<dir>
+					There are additional notes available for this 
+			applet at
+				<a href="http://www.spigots.com/lake_notes.htm">
+				The Lake Applet: Notes</a>
+			</dir>
+	
+
+
+
+<P>
+		<h2>				Transferring files			</h2>
+	<dir>
+		
+Remember that if you are transferring the .class file to 
+another machine with FTP, you should set the 'binary' mode on. Failure 
+to do so will corrupt the file and give rise to a "Class Format" error.
+
+	</dir>
+
+<P>
+		<h2>				Contacting Me			</h2>
+	<dir>
+		
+<P>If you still have trouble getting the applet to work and you have 
+tried all of the possible solutions listed above, then feel to 
+<a href="mailto:java@spigots.com">contact me</a>, remembering to include:
+
+<P>
+
+<ol>
+	<li>
+	A precise description of the problem (do you just
+get a grey rectangle, or an error message etc. etc.)</li>
+<br clear=all><P>
+<li>
+	The URL of the page containing the applet (that's
+the actual page - not just the front page on your site)</li>
+<br clear=all><P>
+</ol>
+
+<P>These two pieces of information will make it a lot easier for me to 
+solve the problem. I cannot <i>guarantee</i> that I will be able to 
+respond to all messages (there's only so many hours in the day...) but 
+sending the URL of a page that doesn't work will greatly increase the 
+chances of getting an answer.
+
+<P>Remember to keep a look out at 
+<a href="http://www.spigots.com/spigots.htm">my web site</a>
+for new applets.
+
+<P><a href="mailto:java@spigots.com">David Griffiths</a>,
+<P>22/11/2000
+	</dir>
+
+	<br clear=all>
+		<hr clear=all>
+
+	<table width=100%>
+		<div align="right">
+			<font face="Arial,Helvetica" size=-1>            <a href="http://www.burstmedia.com/privacy.htm">Privacy Statement</a><BR>
+		Created in Glorious Polyphonic HPL<BR>
+		Last updated: Wednesday 22 November 2000<BR>
+		</div>
+	</font>
+</td></table>
+	</body>
+	</html>

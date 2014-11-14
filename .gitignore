@@ -1,0 +1,46 @@
+#
+# OSX Standard
+#
+
+DS_Store
+.AppleDouble
+.LSOverride
+
+# Icon must end with two \r
+Icon
+
+
+# Thumbnails
+._*
+
+# Files that might appear on external disk
+.Spotlight-V100
+.Trashes
+
+# Directories potentially created on remote AFP share
+.AppleDB
+.AppleDesktop
+Network Trash Folder
+Temporary Items
+.apdisk
+
+
+#
+# Repository Specific
+#
+
+# Directories
+./_download/
+
+./Extendscript/display_types_ease_00.jsx
+
+./javascript/display_types_Facade/
+
+./Obj-c/AWOpenGL2D/
+./Obj-c/Display Types Mångata OSX/
+
+./Processing/display_types_facadePattern/
+./Processing/display_types_KomorebiEase/
+./Processing/display_types_KomorebiLetters/
+./Processing/display_types_Lake/
+./Processing/display_types_Ripple/
