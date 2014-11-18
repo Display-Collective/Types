@@ -22,6 +22,7 @@ Types by Display is curated by Jamilee Polson Lacy.
 
 ['TYPES By Display' Typography Exhibition Coming to Columbia College Gallery](http://www.dnainfo.com/chicago/20141111/south-loop/types-by-display-typography-exhibition-coming-columbia-college-gallery)
 
+['Columbia College Gallery Exhibition Celebrates The Power Of Typography'](http://chicagoist.com/2014/11/17/columbia_college_gallery_exhibition.php#photo-8)
 
 
 Dependencies and Tools
